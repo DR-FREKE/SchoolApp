@@ -1,0 +1,106 @@
+body{
+    font-family: Raleway,sans-serif;
+    letter-spacing: .8px;
+}
+a{
+    letter-spacing: .8px;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: none;
+}
+a:visited{
+    outline: none;
+}
+.holder{
+    width: 35%;
+}
+.panel{
+    width: 100%;
+}
+.panel>.panel-heading{
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1.5px;
+    color: gray !important;
+}
+.panel>.panel-body{
+    padding: 2em;
+}
+.panel-body .mInput>input[type="text"], input[type="password"]{
+    width: 100%;
+    padding: .5em;
+    outline: none;
+    color: #000;
+    font-size: 1em;
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: .8px;
+    font-weight: lighter;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+    color: #aaa;
+}
+input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder{
+    color: #a1a1a1;
+}
+.panel-body .mLogin{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: .6em;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    outline: none;
+    border-radius: 0;
+    box-shadow: 1px 0 3px rgba(0,0,0,.15);
+    -moz-box-shadow: 1px 0 3px rgba(0,0,0,.15);
+    background: rgba(49, 79, 79, .8);
+    /*-webkit-appearance:none;
+	-webkit-transition: 0.5s ease-in-out all;
+	-moz-transition: 0.5s ease-in-out all;
+	-o-transition: 0.5s ease-in-out all;
+	-ms-transition: 0.5s ease-in-out all;
+	transition: 0.5s ease-in-out all;*/
+}
+#loginHolder.vibrate{
+    animation: shakeX 0.7s linear;
+    -webkit-animation: shakeX 0.7s linear;
+    -moz-animation: shakeX 0.7s linear;
+    -o-animation: shakeX 0.7s linear;
+    -ms-animation: shakeX 0.7s linear;
+}
+@keyframes shakeX{
+    50%, 80%{ transform: translateX(0);}
+    20% { transform: translateX(-18px);}
+    40%{ transform: translateX(18px); }
+    60%{ transform: translateX(9px); }
+    82%{ transform: translateX(3px); }
+}
+
+
+
+
+
+
+@media screen and (max-width : 600px){
+    .holder{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .btn-link{
+        width: 100%;
+        text-align: center;
+        margin-top: 1em; 
+    }
+    .panel .panel-body{
+        padding-bottom: 0;
+    }
+}

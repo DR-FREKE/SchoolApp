@@ -1,0 +1,36 @@
+
+/*.mSidebar i{}*/
+.grid > .adminbox5{
+    grid-column: 1/5;
+}
+.totalSchool-Icon, .employee-Icon, .setting-Icon, .admin_visit-Icon{
+    background: rgb(150, 50, 100);
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    text-align: center;
+    margin: .4em 0;
+}
+.employee-Icon{
+    background: rgb(10, 50, 100);
+}
+.setting-Icon{
+    background: rgb(10, 100, 20);
+}
+.admin_visit-Icon{
+    background: rgb(250, 0, 100);
+}
+.admin-icon i{
+    margin: 1.4em;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+
+@media screen and (max-width : 600px){
+    .grid > .adminbox5{
+        grid-column: 1/13;
+    }
+}
